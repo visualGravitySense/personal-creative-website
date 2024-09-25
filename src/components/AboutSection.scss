@@ -86,11 +86,7 @@ $accent-color: #fff;
   
   .about-image {
     width: 100%;
-    // height: auto;
-    // border-bottom: 3px solid $primary-color;
-    // margin-bottom: 1rem;
 
-    // width: 100%; /* Ensure it is responsive */
     aspect-ratio: 1/1; /* Makes it a perfect square */
     object-fit: cover; /* Ensures the image covers the whole area */
     border-radius: 50%; /* Makes the image circular */
