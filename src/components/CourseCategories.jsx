@@ -29,7 +29,7 @@ const CourseCategories = ({ theme }) => {
 
     return (
         <section className={`course-categories ${theme === 'dark' ? 'dark-mode' : ''}`}>
-            <h2>Категории курсов</h2>
+            <h2>Skills</h2>
             <div className="categories-list">
                 {categories.map((category, index) => (
                     <div key={index} className="category-card">

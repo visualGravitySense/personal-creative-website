@@ -2,42 +2,40 @@ import React, { useEffect, useState } from 'react';
 import './PromoBanners.css';
 
 const PromoBanners = ({ theme }) => {
-  const [promos, setPromos] = useState([]);
-
-  useEffect(() => {
-    const fetchPromos = async () => {
-      try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-        const data = await response.json();
-
-        // Map the fetched data to your desired promotional structure
-        const mappedPromos = data.slice(0, 3).map(post => ({
-          title: post.title,
-          description: post.body,
-          cta: 'Подробнее',
-          link: `/promos/${post.id}`, // Custom link for each promo
-        }));
-        
-        setPromos(mappedPromos);
-      } catch (error) {
-        console.error('Error fetching promos:', error);
-      }
-    };
-
-    fetchPromos();
-  }, []);
+  const [promos] = useState([
+    {
+      title: 'Frontend',
+      description: 'React: experience in building complex user interfaces, single-page applications, and dynamic dashboards, ensuring real-time data integration. Vue: Expertise in customizing functionality using a component-based architecture to deliver responsive and scalable solutions.',
+      // instructor: 'Dmitri Gornakov',
+      // image: 'https://via.placeholder.com/800x400',
+    },
+    {
+      title: 'Backend',
+      description: 'Node.js: Developing server-side logic for web applications, working with APIs, and building microservices to ensure efficient and scalable backend architectures. Python: Automating processes, creating RESTful APIs, and integrating with various services to streamline workflows and enhance functionality.',
+      // instructor: 'Dmitri Gornakov',
+      // image: 'https://via.placeholder.com/800x400',
+    },
+    {
+      title: 'Additional Skills',
+      description: 'HTML/CSS: Crafting responsive and cross-browser compatible pages using modern approaches to animations and grid systems. Bootstrap: Rapid development of user-friendly and adaptive interfaces by leveraging pre-built components and responsive design principles. ',
+      // instructor: 'Dmitri Gornakov',
+      // image: 'https://via.placeholder.com/800x400',
+      
+    },
+    
+  ]);
 
   return (
     <section className={`promo-banners ${theme === 'dark' ? 'dark-mode' : ''}`}>
-      <h2>Лучшие предложения со скидкой</h2>
+      <h2>Skills</h2>
       <div className="promo-container">
         {promos.map((promo, index) => (
           <div key={index} className="promo-card">
             <h3>{promo.title}</h3>
             <p>{promo.description}</p>
-            <a href={promo.link} className="promo-btn">
+            {/* <a href={promo.link} className="promo-btn">
               {promo.cta}
-            </a>
+            </a> */}
           </div>
         ))}
       </div>
