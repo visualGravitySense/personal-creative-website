@@ -16,7 +16,7 @@ const PromoBanners = ({ theme }) => {
       // image: 'https://via.placeholder.com/800x400',
     },
     {
-      title: 'Additional Skills',
+      title: 'Additional',
       description: 'HTML/CSS: Crafting responsive and cross-browser compatible pages using modern approaches to animations and grid systems. Bootstrap: Rapid development of user-friendly and adaptive interfaces by leveraging pre-built components and responsive design principles. ',
       // instructor: 'Dmitri Gornakov',
       // image: 'https://via.placeholder.com/800x400',
