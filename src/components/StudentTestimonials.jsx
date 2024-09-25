@@ -1,44 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, button } from 'react';
 import './StudentTestimonials.css';
 
 const StudentTestimonials = ({ theme }) => {
-  const [testimonials, setTestimonials] = useState([]);
-
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
-        const data = await response.json();
-
-        // Map the fetched data to your desired testimonial structure
-        const mappedTestimonials = data.slice(0, 3).map(user => ({
-          name: user.name,
-          course: 'Курс не указан', // Placeholder for course
-          description: `Студент ${user.name} остался доволен обучением!`, // Placeholder description
-          imageUrl: 'https://via.placeholder.com/100', // Placeholder image
-        }));
-
-        setTestimonials(mappedTestimonials);
-      } catch (error) {
-        console.error('Error fetching testimonials:', error);
-      }
-    };
-
-    fetchTestimonials();
-  }, []);
+  const [testimonials] = useState([
+    {
+      name: 'Why UI/UX design can actually ruin a product',
+      description: 'Today, UI/UX design is considered an integral part of a successful product. In pursuit of perfect interfaces, many companies forget about the main goal.',
+      image: 'https://via.placeholder.com/800x400',
+      // instructor: 'Dmitri Gornakov',
+      // image: 'https://via.placeholder.com/800x400',
+    },
+    {
+      name: 'Miro and Obsidian to work effectively on projects',
+      description: 'In the world of creative technologies, where every detail and idea matters, effective tools for organizing information and collaborating can be a real find.',
+      image: 'https://via.placeholder.com/800x400',
+      // instructor: 'Dmitri Gornakov',
+      // image: 'https://via.placeholder.com/800x400',
+    },
+    
+  ]);
 
   return (
     <section className={`testimonials-section ${theme === 'dark' ? 'dark-mode' : ''}`}>
       <div className="testimonials-container">
-        <h2>Отзывы студентов</h2>
+        <h2>Blog</h2>
         <div className="testimonials-content">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-item">
-              <img src={testimonial.imageUrl} alt={testimonial.name} className="testimonial-image" />
+              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
               <div className="testimonial-info">
                 <h3>{testimonial.name}</h3>
-                <p className="testimonial-course">{testimonial.course}</p>
+                {/* <p className="testimonial-course">{testimonial.course}</p> */}
                 <p>{testimonial.description}</p>
+                <button className="btn-learn-more">Read</button>
               </div>
             </div>
           ))}

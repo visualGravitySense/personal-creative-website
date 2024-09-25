@@ -13,12 +13,12 @@ const Home = ({ theme, toggleTheme }) => {
   return (
     <div className={`home-page ${theme === 'dark' ? 'dark-mode' : ''}`}>
       <HeroSection theme={theme} toggleTheme={toggleTheme} />
-      {/* <FeaturedCourses theme={theme} toggleTheme={toggleTheme} /> */}
       <AboutSection theme={theme} />
       <PopularCourses theme={theme} />
       <PromoBanners theme={theme} />
-      <CourseCategories theme={theme} />
       <StudentTestimonials theme={theme} />
+      {/* <FeaturedCourses theme={theme} toggleTheme={toggleTheme} /> */}
+      {/* <CourseCategories theme={theme} /> */}
       {/* Promo blocks, banners, platform info, etc. */}
     </div>
   );
