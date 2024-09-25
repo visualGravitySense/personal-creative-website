@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './Profile.css';
+// import './Footer.scss';
+import { FaGithub , FaTelegram, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Contact = ({ theme }) => {
   const [editing, setEditing] = useState(false);
   const [userInfo, setUserInfo] = useState({
-    name: 'Алексей Петров',
-    email: 'alexey@example.com',
+    name: 'Dmitri Gornakov',
+    email: 'dmitri.gornakov@gmail.com',
     courses: [
-      { title: 'GitHub', progress: 'visualGravitySense' },
-      { title: 'LinkedIn', progress: 'Dmitri Gornakov' },
-      { title: 'Twitter', progress: 'visualGravitySense' },
-      { title: 'Telegram', progress: 'Dmitri Gornakov' }, //   https://t.me/digoNews
+        { title: 'GitHub', progress: 'visualGravitySense', link: 'https://github.com/visualGravitySense', icon: <FaGithub /> },
+        { title: 'LinkedIn', progress: 'Dmitri Gornakov', link: 'https://www.linkedin.com/in/dmitri-gornakov-7a664840/', icon: <FaLinkedin /> },
+        // { title: 'Twitter', progress: 'visualGravitySense', link: 'https://twitter.com/yourprofile', icon: <FaTwitter /> },
+        { title: 'Telegram', progress: 'Digo: Creative Technologist Blog', link: 'https://t.me/digoNews', icon: <FaTelegram /> },
+      
    
     ],
   });
@@ -37,7 +40,11 @@ const Contact = ({ theme }) => {
         {!editing ? (
           <>
             <p><strong>Dmitri Gornakov</strong></p>
-            <p><strong>dmitri.gornakov@gmail.com</strong></p>
+            <p>
+                <strong>
+                <a href="mailto:dmitri.gornakov@gmail.com">dmitri.gornakov@gmail.com</a>
+                </strong>
+            </p>
             {/* <p><strong>Имя:</strong> {userInfo.name}</p>
             <p><strong>Email:</strong> {userInfo.email}</p> */}
             {/* <Button className="btn-edit" onClick={handleEditToggle}>Редактировать профиль</Button> */}
@@ -63,14 +70,19 @@ const Contact = ({ theme }) => {
         )}
       </div>
 
+    
+
       <h3>Follow Me On Social Media:</h3>
       <div className="user-courses">
         {userInfo.courses.length > 0 ? (
           userInfo.courses.map((course, index) => (
             <div key={index} className="course-card">
+            <a href={course.link} aria-label={course.title} target="_blank" rel="noopener noreferrer" className="card-link">
+              {course.icon} {/* Render the icon here */}
               <h4>{course.title}</h4>
               <p>{course.progress}</p>
-            </div>
+            </a>
+          </div>
           ))
         ) : (
           <p>Loading...</p>
