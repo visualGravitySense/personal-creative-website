@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import AboutSection from '../components/AboutSection'
+import Contact from '../components/Contact'
+import Login from '../components/Login'
 import { Button, Modal } from 'react-bootstrap';
 
 // Пример компонента с графиком
@@ -28,13 +30,15 @@ const ChartModal = () => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Увеличить график
+        Contact
       </Button>
 
       <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Body>
           {/* <ChartComponent /> */}
-          <AboutSection/>
+          {/* <AboutSection/> */}
+          {/* <Login /> */}
+          <Contact />
         </Modal.Body>
       </Modal>
     </>

@@ -9,7 +9,7 @@ import Favourites from './pages/Favourites';
 import About from './pages/About';
 import Checkout from './pages/Checkout';
 import Profile from './pages/Profile';
-import Login from './pages/Login';
+import Login from './components/Login';
 import Register from './pages/Register';
 import InstructorCourses from './pages/instructor/Courses';
 import EditCourse from './pages/instructor/EditCourse';
@@ -45,8 +45,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} /> */}
         <Route path="/instructor/courses" element={<InstructorCourses />} />
         <Route path="/instructor/edit-course" element={<EditCourse />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
