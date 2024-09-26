@@ -85,8 +85,9 @@ $accent-color: #fff;
   }
   
   .about-image {
-    width: 100%;
-
+    width: 75%;
+    margin: 0px 0px 20px 0px;
+    // align-items: left;
     aspect-ratio: 1/1; /* Makes it a perfect square */
     object-fit: cover; /* Ensures the image covers the whole area */
     border-radius: 50%; /* Makes the image circular */

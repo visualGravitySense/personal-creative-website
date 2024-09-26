@@ -21,12 +21,12 @@ const HeroSection = ({ theme }) => {
           At the intersection of technology, design and innovation. I create non-standard digital solutions that work at the intersection of creative ideas and modern technologies.
         </p>
 
-        <div>
-          <Button className="m-3" variant="outline-secondary" href="/courses">View projects</Button>
+        {/* <div> */}
+          {/* <Button className="m-3" variant="outline-secondary" href="/courses">View projects</Button> */}
           {/* <Button className="m-2" variant="outline-secondary" href="/signup">Присоединиться сейчас</Button> */}
           <ChartModal  />
           
-        </div>
+        {/* </div> */}
         {/* </Col> */}
 
         

@@ -8,7 +8,7 @@ import { FaTelegram, FaGithub, FaFacebookF, FaTwitter, FaInstagram, FaLinkedin }
 
 const AboutSection = ({ theme }) => {
   // URL изображения из JSONPlaceholder
-  const imageUrl = 'https://via.placeholder.com/800x400';
+  const imageUrl = '/src/assets/profile.png';
 
   return (
     
@@ -34,7 +34,7 @@ const AboutSection = ({ theme }) => {
                 </p>
                 <p>
                 My current projects and developments can be found on GitHub, where I share code and ideas, and on my Telegram channel, where I publish insights for designers and developers.
-                </p>
+                </p><br></br>
                 
                 <div className="footer-social">
                   <a href="https://github.com/visualGravitySense" aria-label="GitHub"><FaGithub /></a>
