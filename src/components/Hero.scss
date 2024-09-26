@@ -1,5 +1,12 @@
 /* Hero Section */
 
+.hide-on-mobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+
 .responsive-text {
   width: 100%; // Default for mobile screens
   margin: 0 auto; // Center the text block

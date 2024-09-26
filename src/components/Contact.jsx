@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import './Profile.css';
+// import './Profile.css';
 // import './Footer.scss';
 import { FaGithub , FaTelegram, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -69,9 +69,7 @@ const Contact = ({ theme }) => {
           </>
         )}
       </div>
-
     
-
       <h3>Follow Me On Social Media:</h3>
       <div className="user-courses">
         {userInfo.courses.length > 0 ? (

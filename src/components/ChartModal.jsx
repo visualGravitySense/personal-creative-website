@@ -3,6 +3,7 @@ import AboutSection from '../components/AboutSection'
 import Contact from '../components/Contact'
 import Login from '../components/Login'
 import { Button, Modal } from 'react-bootstrap';
+import './hero.scss'; 
 
 // Пример компонента с графиком
 // const ChartComponent = () => {
@@ -29,11 +30,13 @@ const ChartModal = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} className="hide-on-mobile">
         Contact
       </Button>
 
-      <Modal show={show} onHide={handleClose} size="lg">
+      {/* <Modal show={show} onHide={handleClose} > */}
+      {/* <Modal show={show} onHide={handleClose} size="lg" > */}
+      <Modal show={show} onHide={handleClose} size="lg" className="hide-on-mobile">
         <Modal.Body>
           {/* <ChartComponent /> */}
           {/* <AboutSection/> */}

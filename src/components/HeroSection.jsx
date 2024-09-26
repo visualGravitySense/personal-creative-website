@@ -22,9 +22,9 @@ const HeroSection = ({ theme }) => {
         </p>
 
         <div>
-          <Button className="m-2" variant="outline-secondary" href="/courses">View projects</Button>
+          <Button className="m-3" variant="outline-secondary" href="/courses">View projects</Button>
           {/* <Button className="m-2" variant="outline-secondary" href="/signup">Присоединиться сейчас</Button> */}
-          <ChartModal />
+          <ChartModal  />
           
         </div>
         {/* </Col> */}
