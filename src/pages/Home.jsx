@@ -16,7 +16,7 @@ const Home = ({ theme, toggleTheme }) => {
       <AboutSection theme={theme} />
       <PopularCourses theme={theme} />
       <PromoBanners theme={theme} />
-      <StudentTestimonials theme={theme} />
+      {/* <StudentTestimonials theme={theme} /> // BLOG */}
       {/* <FeaturedCourses theme={theme} toggleTheme={toggleTheme} /> */}
       {/* <CourseCategories theme={theme} /> */}
       {/* Promo blocks, banners, platform info, etc. */}

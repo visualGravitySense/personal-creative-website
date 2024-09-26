@@ -9,40 +9,40 @@ const PopularCourses = ({ theme }) => {
       title: 'Crypto Dashboard',
       instructor: 'Dmitri Gornakov',
       description: 'A web application built on React and Bootstrap that allows users to track cryptocurrencies in real time.',
-      image: 'https://via.placeholder.com/800x400',
+      image: '/src/assets/crypto-data.png',
     },
     {
       title: 'Creative Portfolio',
       instructor: 'Dmitri Gornakov',
       description: 'A personal project presenting my work as a Creative Technologist.',
-      image: 'https://via.placeholder.com/800x400',
+      image: '/src/assets/creative-portfolio.png',
     },
     {
       title: 'Telegram Bot for Design Tips',
       instructor: 'Dmitri Gornakov',
       description: 'Telegram bot sends users daily design tips, links to useful resources, and inspirational materials.',
       
-      image: 'https://via.placeholder.com/800x400',
+      image: '/src/assets/digo-bot.png',
     },
-    {
-      title: 'Beauty Courses Website',
-      instructor: 'Dmitri Gornakov',
-      description: 'A website developed for a beauty training center, featuring course filtering, user management, and subject sections.',
-      image: 'https://via.placeholder.com/800x400',
-    },
+    // {
+    //   title: 'Beauty Courses Website',
+    //   instructor: 'Dmitri Gornakov',
+    //   description: 'A website developed for a beauty training center, featuring course filtering, user management, and subject sections.',
+    //   image: '/src/assets/digo-bot.png',
+    // },
     // {
     //   title: 'Main Management System',
     //   instructor: 'Dmitri Gornakov',
     //   description: 'A showcase of my work as a Creative Technologist.',
     //   image: 'https://via.placeholder.com/800x400',
     // },
-    {
-      title: 'Website for Artists',
-      instructor: 'Dmitri Gornakov',
-      description: 'A portfolio website designed for artists and designers includes a social media integration.',
+    // {
+    //   title: 'Website for Artists',
+    //   instructor: 'Dmitri Gornakov',
+    //   description: 'A portfolio website designed for artists and designers includes a social media integration.',
       
-      image: 'https://via.placeholder.com/800x400',
-    },
+    //   image: '/src/assets/digo-bot.png',
+    // },
   ]);
 
   return (
