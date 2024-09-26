@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -75,16 +78,16 @@ button:focus-visible {
 .header-navbar {
   background-color: #f0f0f0;
   border-bottom: 2px solid #000;
-  font-family: 'Courier New', Courier, monospace;
-  box-shadow: 3px 3px 0 #000;
+  font-family: 'Uncial Antiqua', Arial, Courier, monospace; /* Updated font */
+  box-shadow: 3px 3px 0 #898989;
 }
 
 .header-navbar .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
   color: #000;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 0 #000;
+  /* text-transform: uppercase; */
+  text-shadow: 2px 2px 0 #898989;
   padding-left: 1rem;
 }
 
