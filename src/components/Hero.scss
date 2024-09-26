@@ -1,5 +1,24 @@
 /* Hero Section */
 
+.responsive-text {
+  width: 100%; // Default for mobile screens
+  margin: 0 auto; // Center the text block
+
+  @media (min-width: 768px) { // For larger screens (tablet and above)
+    width: 50%;
+  }
+}
+
+
+.highlighted-word {
+  background-color: #8de2d8;
+  border: 2px solid #000; // Black border
+  padding: 5px 20px; // Spacing inside the border
+  border-radius: 50px; // Rounded corners
+  display: inline-block; // Ensures the border fits tightly around the word
+}
+
+
 .hero-section {
   padding: 3rem 0;
   background-color: #f0f0f0;
@@ -14,7 +33,7 @@
   h1 {
     font-size: 3rem;
     color: #000;
-    text-shadow: 3px 3px 0 #000;
+    text-shadow: 3px 3px 0 #898989;
   }
 
   h2 {

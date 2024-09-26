@@ -1,8 +1,10 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import './Header.scss';
+import Col from "react-bootstrap/Col";
 
 const Header = ({ theme, toggleTheme }) => {
+  // const imageUrl = '/src/assets/hero-group.png'; 
   return (
     <Navbar 
       expand="lg" 
@@ -10,7 +12,14 @@ const Header = ({ theme, toggleTheme }) => {
       className={`header-navbar w-100 ${theme}`} // Добавляем класс в зависимости от темы
     >
       {/* Логотип */}
-      <Navbar.Brand href="/">Digo</Navbar.Brand>
+      {/* <Col md={1}>
+          <img
+            src={imageUrl}
+            alt="About Our Platform"
+            className="about-image"
+          />
+        </Col>   */}
+      <Navbar.Brand href="/">digo</Navbar.Brand> 
 
       {/* Кнопка для мобильной версии */}
       {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
