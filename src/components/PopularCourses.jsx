@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './PopularCourses.css';
 import './AboutSection.scss';
 
+import cryptoDataImage from '../assets/crypto-data.png'; // Импортируем изображение
+import creativePortfolioImage from '../assets/creative-portfolio.png'; // Импортируем изображение
+import digoBotImage from '../assets/digo-bot.png'; // Импортируем изображение
+
 const PopularCourses = ({ theme }) => {
   // const imageUrl = 'https://via.placeholder.com/800x400'; // Example image URL
   const [courses] = useState([
@@ -9,40 +13,23 @@ const PopularCourses = ({ theme }) => {
       title: 'Crypto Dashboard',
       instructor: 'Dmitri Gornakov',
       description: 'A web application built on React and Bootstrap that allows users to track cryptocurrencies in real time.',
-      image: '/src/assets/crypto-data.png',
+      image: cryptoDataImage,
+      link: 'https://github.com/visualGravitySense/crypto-data', // Ссылка для проекта
     },
     {
       title: 'Creative Portfolio',
       instructor: 'Dmitri Gornakov',
       description: 'A personal project presenting my work as a Creative Technologist.',
-      image: '/src/assets/creative-portfolio.png',
+      image: creativePortfolioImage,
+      link: 'https://github.com/visualGravitySense/my-personal-website', // Ссылка для проекта
     },
     {
       title: 'Telegram Bot for Design Tips',
       instructor: 'Dmitri Gornakov',
       description: 'Telegram bot sends users daily design tips, links to useful resources, and inspirational materials.',
-      
-      image: '/src/assets/digo-bot.png',
+      image: digoBotImage,
+      link: 'https://github.com/visualGravitySense/bisonwise', // Ссылка для проекта
     },
-    // {
-    //   title: 'Beauty Courses Website',
-    //   instructor: 'Dmitri Gornakov',
-    //   description: 'A website developed for a beauty training center, featuring course filtering, user management, and subject sections.',
-    //   image: '/src/assets/digo-bot.png',
-    // },
-    // {
-    //   title: 'Main Management System',
-    //   instructor: 'Dmitri Gornakov',
-    //   description: 'A showcase of my work as a Creative Technologist.',
-    //   image: 'https://via.placeholder.com/800x400',
-    // },
-    // {
-    //   title: 'Website for Artists',
-    //   instructor: 'Dmitri Gornakov',
-    //   description: 'A portfolio website designed for artists and designers includes a social media integration.',
-      
-    //   image: '/src/assets/digo-bot.png',
-    // },
   ]);
 
   return (
@@ -63,12 +50,14 @@ const PopularCourses = ({ theme }) => {
             {/* <p>Рейтинг: {course.rating}</p>
             <p>Студентов: {course.students}</p>
             <p>Цена: {course.price}</p> */}
-            <button className="btn-learn-more">Discover</button>
+            <a href={course.link} target="_blank" rel="noopener noreferrer">
+              <button className="btn-learn-more">Discover</button>
+            </a>
           </div>
         ))}
       </div>
     </section>
   );
 };
-
+ 
 export default PopularCourses;

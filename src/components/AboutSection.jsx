@@ -4,11 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import './AboutSection.scss';
 import { FaTelegram, FaGithub, FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import aboutImage from '../assets/profile.png'; 
 
 
 const AboutSection = ({ theme }) => {
   // URL изображения из JSONPlaceholder
-  const imageUrl = '/src/assets/profile.png';
+  // const imageUrl = '/src/assets/profile.png';
 
   return (
     
@@ -19,7 +20,7 @@ const AboutSection = ({ theme }) => {
         <h2>About Me</h2>
         <Col md={4}>
           <img
-            src={imageUrl}
+            src={aboutImage}
             alt="About Our Platform"
             className="about-image"
           />
