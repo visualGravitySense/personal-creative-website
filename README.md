@@ -21,7 +21,7 @@ A personal portfolio website showcasing my work as a Creative Technologist. This
 ### 3. [Telegram Bot for Design Tips](https://github.com/visualGravitySense/bisonwise)
 A Telegram bot that provides daily design tips, inspirational resources, and useful links to designers and creative professionals. The bot helps users stay updated with the latest design trends and best practices.
 
-- **Tech Stack:** Node.js, Telegram API, MongoDB
+- **Tech Stack:** Python, Telegram API, MongoDB
 - **Features:** Automated tips delivery, link sharing, user engagement
 - [View Project](https://github.com/visualGravitySense/bisonwise)
 
