@@ -59,5 +59,5 @@ const PopularCourses = ({ theme }) => {
     </section>
   );
 };
- 
+  
 export default PopularCourses;
