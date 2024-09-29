@@ -13,9 +13,9 @@ const Footer = ({ theme }) => {
           <a href="/terms-of-use">Условия использования</a>
         </div> */}
         <div className="footer-social">
-          <a href="https://github.com/visualGravitySense" aria-label="GitHub"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" aria-label="LinkedIn"><FaLinkedin /></a>
-          <a href="https://t.me/digoNews" aria-label="Telegram"><FaTelegram /></a>
+          <a href="https://github.com/visualGravitySense" target="_blank" aria-label="GitHub"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" target="_blank" aria-label="LinkedIn"><FaLinkedin /></a>
+          <a href="https://t.me/digoNews" target="_blank" aria-label="Telegram"><FaTelegram /></a>
           {/* <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
           <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a> */}
         </div>

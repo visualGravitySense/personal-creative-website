@@ -38,8 +38,8 @@ const AboutSection = ({ theme }) => {
                 </p><br></br>
                 
                 <div className="footer-social">
-                  <a href="https://github.com/visualGravitySense" aria-label="GitHub"><FaGithub /></a>
-                  <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" aria-label="LinkedIn"><FaLinkedin /></a>
+                  <a href="https://github.com/visualGravitySense" target="_blank" aria-label="GitHub"><FaGithub /></a>
+                  <a href="https://www.linkedin.com/in/dmitri-gornakov-7a664840/" target="_blank" aria-label="LinkedIn"><FaLinkedin /></a>
                  
                 </div>
                 {/* <Button className="m-2" variant="primary" href="/courses">Мое обучение</Button> */}
