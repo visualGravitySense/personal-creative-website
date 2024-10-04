@@ -18,6 +18,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer"; 
 // import './App.css';
 import './App.scss';
+import TestimonialDetail from './TestimonialDetail';
+
 
 function App() {
 
@@ -37,6 +39,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/testimonial/:id" element={<TestimonialDetail />} />
         <Route path="/courses" element={<Courses theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/favourites" element={<Favourites theme={theme} toggleTheme={toggleTheme} />} />
