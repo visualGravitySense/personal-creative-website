@@ -95,3 +95,24 @@
     border: 2px solid #f0f0f0;
   }
   
+  .testimonial-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
