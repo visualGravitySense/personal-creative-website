@@ -8,7 +8,8 @@ const testimonials = [
     name: "UI/UX design can actually ruin a product",
     content:
       "Today, UI/UX design is considered an integral part of a successful product. In pursuit of perfect interfaces...",
-    fullContent: "However, sometimes focusing too much on design details can lead to losing the product's core essence and functionality. A great user interface is important, but if it distracts from solving the main problem or complicates the user journey, the product may fail in the long term...",
+    fullContent:
+      "However, sometimes focusing too much on design details can lead to losing the product's core essence and functionality. A great user interface is important, but if it distracts from solving the main problem or complicates the user journey, the product may fail in the long term... However, sometimes focusing too much on design details can lead to losing the product's core essence and functionality. A great user interface is important, but if it distracts from solving the main problem or complicates the user journey, the product may fail in the long term... However, sometimes focusing too much on design details can lead to losing the product's core essence and functionality. A great user interface is important, but if it distracts from solving the main problem or complicates the user journey, the product may fail in the long term... However, sometimes focusing too much on design details can lead to losing the product's core essence and functionality. A great user interface is important, but if it distracts from solving the main problem or complicates the user journey, the product may fail in the long term...",
 
     image: "/src/assets/uiux-bugs.jpeg",
   },
@@ -17,9 +18,10 @@ const testimonials = [
     name: "Miro and Obsidian to work effectively on projects",
     content:
       "In the world of creative technologies, where every detail and idea matters...",
-    fullContent: "In today's fast-paced, creativity-driven world, Miro and Obsidian are gaining popularity as indispensable tools for brainstorming, project management, and note-taking. By integrating them into workflows, teams can improve efficiency, foster collaboration, and achieve their goals faster.",
+    fullContent:
+      "In today's fast-paced, creativity-driven world, Miro and Obsidian are gaining popularity as indispensable tools for brainstorming, project management, and note-taking. By integrating them into workflows, teams can improve efficiency, foster collaboration, and achieve their goals faster.",
 
-      image: "/src/assets/miro-obsidian.jpeg",
+    image: "/src/assets/miro-obsidian.jpeg",
   },
 ];
 
@@ -31,14 +33,14 @@ const TestimonialDetail = () => {
     <div className="testimonial-detail">
       {testimonial ? (
         <>
-          {/* <img
+          <img
             src={testimonial.image}
             alt={testimonial.name}
             className="testimonial-image"
-          /> */}
+          />
           <h1>{testimonial.name}</h1>
           <p>{testimonial.content}</p>
-          {/* <p className="full-content">{testimonial.fullContent}</p>  */}
+          <p className="full-content">{testimonial.fullContent}</p>
         </>
       ) : (
         <p>Testimonial not found.</p>

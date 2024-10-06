@@ -1,77 +1,85 @@
 .testimonial-detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    height: 100vh;
-    // background: #1c1c1c; 
-    color: #f4f4f4;
-    font-family: 'Courier New', monospace;
-  
-    h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      color: #161616; // Яркий желтый для контраста
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      text-shadow: 2px 2px 0 #ff00ff, 4px 4px 0 #00ffff;
-      margin: 0 0 2rem;
-    //   transform: rotate(-5deg); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+//   height: 100vh;
+//   background: #1c1c1c;
+  color: #f4f4f4;
+  font-family: "Courier New", monospace;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #161616; // Яркий желтый для контраста
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 0 #ff00ff, 4px 4px 0 #00ffff;
+    margin: 0 0 2rem;
+    //   transform: rotate(-5deg);
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #ffffff;
+    background: linear-gradient(45deg, #1d101d, #0f223a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    border: 2px solid #ffcc00; // Яркая рамка
+    box-shadow: 4px 4px 0 #00ffff, 8px 8px 0 #ff00ff;
+    //   transform: skew(-5deg, 5deg);
+    transition: transform 0.5s ease;
+
+    &:hover {
+      // transform: skew(-5deg, 5deg) scale(1.05);
+      box-shadow: 6px 6px 0 #ff00ff, 12px 12px 0 #00ffff;
     }
-  
-    p {
-      font-size: 1.5rem;
+  }
+
+  .full-content {
+    border: none;
+    box-shadow: none;
+      font-size: 1.1rem;
+      color: #555;
       line-height: 1.8;
-      color: #ffffff;
-      background: linear-gradient(45deg, #1d101d, #0f223a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      padding: 1rem;
-      border: 2px solid #ffcc00; // Яркая рамка
-      box-shadow: 4px 4px 0 #00ffff, 8px 8px 0 #ff00ff;
-    //   transform: skew(-5deg, 5deg); 
-      transition: transform 0.5s ease;
-  
+      text-align: justify;
+      margin-bottom: 100px;
+
       &:hover {
-        // transform: skew(-5deg, 5deg) scale(1.05); 
-        box-shadow: 6px 6px 0 #ff00ff, 12px 12px 0 #00ffff;
+        // transform: skew(-5deg, 5deg) scale(1.05);
+        box-shadow: none;
       }
     }
 
-    // .full-content {
-    //     font-size: 1.1rem;
-    //     color: #555;
-    //     line-height: 1.8;
-    //     text-align: justify;
-    //     margin-bottom: 100px;
-    //   }
-  
-    .testimonial-image {
-      max-width: 80%;
-      margin-bottom: 2rem;
-      border: 5px solid #ffcc00;
-      box-shadow: 10px 10px 0 #00ffff, 20px 20px 0 #ff00ff;
-      transition: transform 0.5s ease;
-  
-      &:hover {
-        transform: rotate(10deg) scale(1.1);
-      }
-    }
-  
-    // Для мобильных устройств
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 3rem;
-      }
-  
-      p {
-        font-size: 1.2rem;
-      }
-  
-      .testimonial-image {
-        max-width: 100%;
-      }
+  .testimonial-image {
+    max-width: 50%;
+    margin-bottom: 2rem;
+    border: 1px solid #ffcc00;
+    box-shadow: 2px 2px 0 #00ffff, 3px 3px 0 #ff00ff;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: rotate(10deg) scale(1.1);
     }
   }
-  
+
+  // Для мобильных устройств
+  @media (max-width: 768px) {
+
+    
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .testimonial-image {
+      max-width: 50%;
+    }
+  }
+}
