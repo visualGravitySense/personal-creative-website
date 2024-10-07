@@ -9,6 +9,7 @@ import digoBotImage from "../assets/digo-bot.png"; // Импортируем и�
 
 const posts = [
   { id: "uiux-ruin-product", title: "UI/UX Design Can Actually Ruin a Product" },
+  { id: "uiux-design", title: "Enhancing User Experience: Key Guidelines for Effective Website Design" },
 ];
 
 const PopularCourses = ({ theme }) => {
