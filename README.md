@@ -24,7 +24,7 @@ Here’s a blog description that incorporates your provided content:
 
 ---
 
-![[Frame 77.png]]
+![](img/Frame77.png)
 
 **Enhancing User Experience: Key Guidelines for Effective Website Design**
 
@@ -39,7 +39,7 @@ In the realm of web design, a thoughtful approach is essential for creating an e
 - **Microcopy Guidelines**: Effective writing within your design system is essential. By considering platform conventions and best practices, you can create standard microcopy that resonates with users and supports their journey.
 
 
-![[Frame 27 (2).png]]
+![](img/Frame27(2).png)
 
 ### Cards as a Versatile Component
 
@@ -56,7 +56,7 @@ Cards are an invaluable element in web design, providing a way to group informat
 - **Responsiveness**: On mobile devices, cards often take up the full width to optimize space and enhance content accessibility.
 
 
-![[Frame 27 (1) 1.png]]
+![](Frame27(1)1.png)
 ### Layout and Color
 
 - **Layout**: A well-thought-out layout, utilizing grids and consistent spacing, significantly improves user scanning and content understanding.
