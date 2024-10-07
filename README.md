@@ -56,7 +56,7 @@ Cards are an invaluable element in web design, providing a way to group informat
 - **Responsiveness**: On mobile devices, cards often take up the full width to optimize space and enhance content accessibility.
 
 
-![](Frame27(1)1.png)
+![](img/Frame27(1)1.png)
 ### Layout and Color
 
 - **Layout**: A well-thought-out layout, utilizing grids and consistent spacing, significantly improves user scanning and content understanding.
