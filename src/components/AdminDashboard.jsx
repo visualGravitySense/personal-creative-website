@@ -1,28 +1,50 @@
 import React from "react";
 import { Button, Table, Container, Row, Col } from "react-bootstrap";
-import './AdminDashboard.css';
+import "./AdminDashboard.css";
 
 const AdminDashboard = ({ theme }) => {
   // Sample data for users, courses, and orders
   const users = [
     { id: 1, name: "Иван Иванов", email: "ivan@example.com", role: "User" },
-    { id: 2, name: "Анна Петрова", email: "anna@example.com", role: "Instructor" },
+    {
+      id: 2,
+      name: "Анна Петрова",
+      email: "anna@example.com",
+      role: "Instructor",
+    },
   ];
 
   const courses = [
-    { id: 1, title: "React для начинающих", instructor: "Иван Иванов", price: "4990 ₽" },
-    { id: 2, title: "Основы Python", instructor: "Анна Петрова", price: "5990 ₽" },
+    {
+      id: 1,
+      title: "React для начинающих",
+      instructor: "Иван Иванов",
+      price: "4990 ₽",
+    },
+    {
+      id: 2,
+      title: "Основы Python",
+      instructor: "Анна Петрова",
+      price: "5990 ₽",
+    },
   ];
 
   const orders = [
-    { id: 1, user: "Иван Иванов", course: "React для начинающих", status: "Completed" },
+    {
+      id: 1,
+      user: "Иван Иванов",
+      course: "React для начинающих",
+      status: "Completed",
+    },
     { id: 2, user: "Анна Петрова", course: "Основы Python", status: "Pending" },
   ];
 
   return (
-    <Container className={`admin-dashboard ${theme === 'dark' ? 'dark-mode' : ''}`}>
+    <Container
+      className={`admin-dashboard ${theme === "dark" ? "dark-mode" : ""}`}
+    >
       <h2 className="dashboard-title">Панель администратора</h2>
-      
+
       <Row className="dashboard-section">
         <Col>
           <h3>Пользователи</h3>
@@ -44,7 +66,7 @@ const AdminDashboard = ({ theme }) => {
                   <td>{user.email}</td>
                   <td>{user.role}</td>
                   <td>
-                    <Button variant="warning">Редактировать</Button>{' '}
+                    <Button variant="warning">Редактировать</Button>{" "}
                     <Button variant="danger">Удалить</Button>
                   </td>
                 </tr>
@@ -53,7 +75,7 @@ const AdminDashboard = ({ theme }) => {
           </Table>
         </Col>
       </Row>
-      
+
       <Row className="dashboard-section">
         <Col>
           <h3>Курсы</h3>
@@ -75,7 +97,7 @@ const AdminDashboard = ({ theme }) => {
                   <td>{course.instructor}</td>
                   <td>{course.price}</td>
                   <td>
-                    <Button variant="warning">Редактировать</Button>{' '}
+                    <Button variant="warning">Редактировать</Button>{" "}
                     <Button variant="danger">Удалить</Button>
                   </td>
                 </tr>
@@ -84,7 +106,7 @@ const AdminDashboard = ({ theme }) => {
           </Table>
         </Col>
       </Row>
-      
+
       <Row className="dashboard-section">
         <Col>
           <h3>Заказы</h3>
