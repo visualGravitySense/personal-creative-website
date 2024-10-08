@@ -18,7 +18,7 @@ const Pagination = ({ theme, currentPage, totalPages, onPageChange }) => {
             onClick={() => handlePageChange(currentPage - 1)} 
             disabled={currentPage === 1}
         >
-            Предыдущая
+            Previous
         </button>
 
         {Array.from({ length: totalPages }, (_, index) => (
@@ -36,7 +36,7 @@ const Pagination = ({ theme, currentPage, totalPages, onPageChange }) => {
             onClick={() => handlePageChange(currentPage + 1)} 
             disabled={currentPage === totalPages}
         >
-            Следующая
+            Next
         </button>
         </div>
     </section>

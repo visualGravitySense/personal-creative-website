@@ -8,12 +8,12 @@ const HeroClasses = ({ theme }) => {
       <div className="hero-content">
         {/* Хлебные крошки */}
         <nav className="breadcrumb-nav">
-          <a href="/">Главная</a> &gt; <a href="/courses">Курсы</a> &gt;{" "}
-          <a href="/courses/current">Текущий курс</a>
+          <a href="/">Home</a> &gt; <a href="/courses">Classes</a> &gt;{" "}
+          <a href="/courses/current">Current class</a>
         </nav>
-        <h1>Добро пожаловать на наш курс!</h1>
+        <h1>Frontend and React</h1>
         <p>
-          Изучите самые современные технологии и навыки с нашими экспертами.
+          Online class
         </p>
         <div className="course-details">
           <div className="rating">
@@ -23,11 +23,11 @@ const HeroClasses = ({ theme }) => {
               </span>
             ))}
           </div>
-          <p className="instructor-name">Имя преподавателя: Алексей Иванов</p>
-          <p className="last-updated">Последнее обновление: Сентябрь 2024</p>
-          <p className="language">Язык курса: Русский</p>
+          <p className="instructor-name">Category: Development</p>
+          <p className="last-updated">Last update: September 2024</p>
+          <p className="language">Level: Junior</p>
         </div>
-        <button className="cta-button">Записаться на курс</button>
+        <button className="cta-button">Join</button>
       </div>
     </section>
   );

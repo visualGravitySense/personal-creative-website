@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
-import './CourseSorting.css'; // Добавляем стили
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
+import "./CourseSorting.css"; // Добавляем стили
 
 const CourseSorting = ({ onSort }) => {
   // Локальное состояние для сортировки
-  const [sortOption, setSortOption] = useState('');
+  const [sortOption, setSortOption] = useState("");
 
   // Функция для обработки сортировки
   const handleSortChange = (e) => {
@@ -15,15 +15,21 @@ const CourseSorting = ({ onSort }) => {
 
   return (
     <section className="course-sorting">
-      <h3>Сортировка курсов</h3>
+      <h3>Course sorting</h3>
       <Form>
         <Form.Group controlId="sort">
-          <Form.Label>Сортировать по:</Form.Label>
-          <Form.Control as="select" value={sortOption} onChange={handleSortChange}>
-            <option value="">Выберите опцию</option>
-            <option value="date">Дате добавления</option>
-            <option value="popularity">Популярности (количество студентов)</option>
-            <option value="rating">Рейтингу</option>
+          <Form.Label>Sort by:</Form.Label>
+          <Form.Control
+            as="select"
+            value={sortOption}
+            onChange={handleSortChange}
+          >
+            <option value="">Choose options</option>
+            <option value="date">Date</option>
+            <option value="popularity">
+              Popularity (by studients)
+            </option>
+            <option value="rating">Raiting</option>
           </Form.Control>
         </Form.Group>
       </Form>
