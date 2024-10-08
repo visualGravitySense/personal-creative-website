@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
-import './CourseFilters.css'; // Добавьте стили для фильтров
+import React, { useState } from "react";
+import { Form, Button, Row, Col } from "react-bootstrap";
+import "./CourseFilters.css"; // Добавьте стили для фильтров
 
 const CourseFilters = ({ onFilter }) => {
   // Локальные состояния для фильтров
-  const [category, setCategory] = useState('');
-  const [level, setLevel] = useState('');
-  const [price, setPrice] = useState('');
-  const [rating, setRating] = useState('');
+  const [category, setCategory] = useState("");
+  const [level, setLevel] = useState("");
+  const [price, setPrice] = useState("");
+  const [rating, setRating] = useState("");
 
   // Функция для применения фильтров
   const handleFilter = () => {
@@ -97,4 +97,3 @@ const CourseFilters = ({ onFilter }) => {
 };
 
 export default CourseFilters;
-

@@ -1,10 +1,17 @@
-import React from 'react';
-import { FaVideo, FaTasks, FaMobileAlt, FaTv, FaInfinity, FaCertificate } from 'react-icons/fa'; // Импортируем иконки
-import './CourseInfo.css'; // Импорт стилей
+import React from "react";
+import {
+  FaVideo,
+  FaTasks,
+  FaMobileAlt,
+  FaTv,
+  FaInfinity,
+  FaCertificate,
+} from "react-icons/fa"; // Импортируем иконки
+import "./CourseInfo.css"; // Импорт стилей
 
 const CourseInfo = ({ theme }) => {
   return (
-    <section className={`course-info ${theme === 'dark' ? 'dark-mode' : ''}`}>
+    <section className={`course-info ${theme === "dark" ? "dark-mode" : ""}`}>
       <h2>Что входит в курс</h2>
       <ul className="course-info-list">
         <li>

@@ -1,18 +1,17 @@
-import React from 'react';
-import HeroClasses from "../../components/Courses/HeroClasses";  
-import CourseInfo from "../../components/Courses/CourseInfo";  
-// import FeaturedCourses from "./components/FeaturedCourses";  
-// import CourseCategories from "../components/CourseCategories";    
-// import PopularCourses from "./components/PopularCourses";    
+import React from "react";
+import HeroClasses from "../../components/Courses/HeroClasses";
+import CourseInfo from "../../components/Courses/CourseInfo";
+// import FeaturedCourses from "./components/FeaturedCourses";
+// import CourseCategories from "../components/CourseCategories";
+// import PopularCourses from "./components/PopularCourses";
 // import PromoBanners from "./components/PromoBanners";
 // import AboutSection from "./components/AboutSection";
 import StudentTestimonials from "../../components/StudentTestimonials";
-import './Courses.css';
-
+import "./Courses.css";
 
 const CourseDetail = ({ theme, toggleTheme }) => {
   return (
-    <div className={`home-page ${theme === 'dark' ? 'dark-mode' : ''}`}>
+    <div className={`home-page ${theme === "dark" ? "dark-mode" : ""}`}>
       <HeroClasses theme={theme} toggleTheme={toggleTheme} />
       <CourseInfo theme={theme} toggleTheme={toggleTheme} />
       <StudentTestimonials theme={theme} />
@@ -28,4 +27,3 @@ const CourseDetail = ({ theme, toggleTheme }) => {
 };
 
 export default CourseDetail;
-
