@@ -12,13 +12,13 @@ const CourseCard = ({ course }) => {
           {course.description}
         </Card.Text>
         <div className="course-price">
-          <strong>Price: {course.price} ₽</strong>
+          <strong>Price: {course.price} €</strong>
         </div>
         <Button variant="primary" href={`/courses/${course.id}`} className="btn-course-details">
-          Подробнее
+          Details
         </Button>
         <Button variant="secondary" className="btn-add-to-cart" onClick={() => handleAddToCart(course.id)}>
-          В корзину
+          To checkout
         </Button>
       </Card.Body>
     </Card>
