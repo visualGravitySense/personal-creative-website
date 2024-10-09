@@ -4,6 +4,8 @@
     color: #000;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+
+    
 }
 
 .dark-mode {
@@ -46,6 +48,7 @@
 
 .social-media {
     margin-top: 2rem;
+    align-items: center;
 }
 
 .social-link {
