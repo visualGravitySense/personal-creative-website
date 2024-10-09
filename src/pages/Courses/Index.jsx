@@ -8,9 +8,14 @@ import PromoBanners from "../../components/PromoBanners";
 // import StudentTestimonials from "../components/StudentTestimonials";
 import "./Courses.css";
 
+import CourseFilters from "../../components/CourseFilters";  
+import CourseSorting from '../../components/CourseSorting';
+
 const Courses = ({ theme, toggleTheme }) => {
   return (
     <div className={`home-page ${theme === "dark" ? "dark-mode" : ""}`}>
+      <CourseFilters />
+      <CourseSorting />
       <AllCourses theme={theme} toggleTheme={toggleTheme} />
       <PromoBanners theme={theme} />
       {/* <CourseCategories theme={theme} />

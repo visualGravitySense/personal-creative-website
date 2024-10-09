@@ -5,11 +5,11 @@ import './Profile.css';
 const Profile = ({ theme }) => {
   const [editing, setEditing] = useState(false);
   const [userInfo, setUserInfo] = useState({
-    name: 'Алексей Петров',
+    name: 'John Doe',
     email: 'alexey@example.com',
     courses: [
-      { title: 'Курс по React', progress: '80%' },
-      { title: 'Курс по Веб-дизайну', progress: '100%' },
+      { title: 'React JS', progress: '80%' },
+      { title: 'Web Design', progress: '100%' },
     ],
   });
 
@@ -27,14 +27,14 @@ const Profile = ({ theme }) => {
 
   return (
     <section className={`profile-section ${theme === 'dark' ? 'dark-mode' : ''}`}>
-      <h2>Профиль пользователя</h2>
+      <h2>Profile</h2>
 
       <div className="profile-info">
         {!editing ? (
           <>
-            <p><strong>Имя:</strong> {userInfo.name}</p>
+            <p><strong>Name:</strong> {userInfo.name}</p>
             <p><strong>Email:</strong> {userInfo.email}</p>
-            <Button className="btn-edit" onClick={handleEditToggle}>Редактировать профиль</Button>
+            <Button className="btn-edit" onClick={handleEditToggle}>Edit profile</Button>
           </>
         ) : (
           <>
@@ -57,17 +57,17 @@ const Profile = ({ theme }) => {
         )}
       </div>
 
-      <h3>Приобретенные курсы</h3>
+      <h3>Current classes:</h3>
       <div className="user-courses">
         {userInfo.courses.length > 0 ? (
           userInfo.courses.map((course, index) => (
             <div key={index} className="course-card">
               <h4>{course.title}</h4>
-              <p>Прогресс: {course.progress}</p>
+              <p>Progress: {course.progress}</p>
             </div>
           ))
         ) : (
-          <p>Вы еще не приобрели ни одного курса.</p>
+          <p>No classes</p>
         )}
       </div>
     </section>

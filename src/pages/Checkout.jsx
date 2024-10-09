@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Checkout.css'; // Optional, if you want to style it separately
+import './Favourites.css';
+import Favourites from "./Favourites"; 
+import AllCourses from "../components/AllCourses";
 
 const Checkout = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +40,12 @@ const Checkout = () => {
   };
 
   return (
+
+    <>
+    
+
+    <div className='favourites-section'>
+      {/* <Favourites /> */}
     <div className="checkout-container">
       <h2>Checkout</h2>
 
@@ -83,6 +92,11 @@ const Checkout = () => {
         <button type="submit" className="submit-btn">Confirm Order</button>
       </form>
     </div>
+    </div>
+
+    <AllCourses />
+
+    </>
   );
 };
 
