@@ -6,34 +6,34 @@ import './Favourites.css';
 const Favourites = ({ theme }) => {
   const favouriteCourses = [
     {
-      title: 'Курс по React',
-      instructor: 'Иван Иванов',
-      price: '4990 ₽',
+      title: 'React JS',
+      instructor: 'React Instructor',
+      price: '49 ',
     },
     {
-      title: 'Курс по Веб-дизайну',
-      instructor: 'Анна Смирнова',
-      price: '3990 ₽',
+      title: 'Graphick Design',
+      instructor: 'UX Designer',
+      price: '39 €',
     },
     {
-      title: 'Курс по React',
-      instructor: 'Иван Иванов',
-      price: '4990 ₽',
+      title: 'Junior Web Designer',
+      instructor: 'Web Developer',
+      price: '49 €',
     },
     {
-      title: 'Курс по Веб-дизайну',
-      instructor: 'Анна Смирнова',
-      price: '3990 ₽',
+      title: 'UX UI Design',
+      instructor: 'UX Designer',
+      price: '39 €',
     },
     {
-      title: 'Курс по React',
-      instructor: 'Иван Иванов',
-      price: '4990 ₽',
+      title: 'React JS Next',
+      instructor: 'Web Developer',
+      price: '49 €',
     },
     {
-      title: 'Курс по Веб-дизайну',
-      instructor: 'Анна Смирнова',
-      price: '3990 ₽',
+      title: 'Web Design',
+      instructor: 'Web Developer',
+      price: '39 €',
     },
     // Добавьте другие избранные курсы
   ];
@@ -42,22 +42,22 @@ const Favourites = ({ theme }) => {
     <section className={`favourites-section ${theme === 'dark' ? 'dark-mode' : ''}`}>
 
       <Profile />
-      <h2>Избранные курсы</h2>
+      <h2>Favourites</h2>
       <div className="favourite-courses">
         {favouriteCourses.length > 0 ? (
           favouriteCourses.map((course, index) => (
             <div key={index} className="favourite-card">
               <h3>{course.title}</h3>
-              <p>Инструктор: {course.instructor}</p>
-              <p>Цена: {course.price}</p>
-              <Button className="btn-remove">Удалить из избранного</Button>
+              <p>Teacher: {course.instructor}</p>
+              <p>Price: {course.price}</p>
+              <Button className="btn-remove">Remove from list</Button>
             </div>
           ))
         ) : (
-          <p>У вас нет избранных курсов.</p>
+          <p>No favoutites courses.</p>
         )}
       </div>
-      <Button className="btn-checkout">Перейти к оформлению заказа</Button>
+      <Button className="btn-checkout">Go to check out</Button>
     </section>
   );
 };

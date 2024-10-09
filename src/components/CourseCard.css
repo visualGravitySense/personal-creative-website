@@ -12,16 +12,16 @@
 }
 
 .course-description {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .course-price {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-course-details {
   margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .btn-add-to-cart {
