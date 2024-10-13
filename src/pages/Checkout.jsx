@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Checkout.css'; // Optional, if you want to style it separately
 import './Favourites.css';
-import Favourites from "./Favourites"; 
+import Favourites from "./Favourites";  
 import AllCourses from "../components/AllCourses";
 
 const Checkout = () => {
